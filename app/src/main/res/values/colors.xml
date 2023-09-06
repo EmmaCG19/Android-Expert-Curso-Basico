@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Material A200-->
+    <color name="material_A200_red">#FF5252</color>
+    <color name="material_A200_magenta">#E040FB</color>
+    <color name="material_A200_purple">#7C4DFF</color>
+    <color name="material_A200_darkblue">#536DFE</color>
+    <color name="material_A200_blue">#448AFF</color>
+    <color name="material_A200_lightblue">#40C4FF</color>
+    <color name="material_A200_mint">#18FFFF</color>
+    <color name="material_A200_lightgreen">#69F0AE</color>
+    <color name="material_A200_yellow">#FFFF00</color>
+
+    <!--Material 200-->
+    <color name="material_200_pink">#CE93D8</color>
+</resources>
