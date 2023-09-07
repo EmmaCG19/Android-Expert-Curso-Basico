@@ -3,7 +3,6 @@ package com.aristidevs.androidmaster.apps.firstapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import com.aristidevs.androidmaster.R
@@ -15,7 +14,7 @@ class FirstAppActivity : AppCompatActivity() {
         setupUI()
     }
 
-    fun setupUI() {
+    private fun setupUI() {
         val etInput = findViewById<AppCompatEditText>(R.id.etInput)
         val btnStart = findViewById<AppCompatButton>(R.id.btnStart)
 
@@ -34,8 +33,5 @@ class FirstAppActivity : AppCompatActivity() {
 
     }
 
-    fun showName() {
-
-    }
 }
 

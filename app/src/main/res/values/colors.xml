@@ -8,17 +8,24 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!--Material A200-->
-    <color name="material_A200_red">#FF5252</color>
-    <color name="material_A200_magenta">#E040FB</color>
-    <color name="material_A200_purple">#7C4DFF</color>
-    <color name="material_A200_darkblue">#536DFE</color>
-    <color name="material_A200_blue">#448AFF</color>
-    <color name="material_A200_lightblue">#40C4FF</color>
-    <color name="material_A200_mint">#18FFFF</color>
-    <color name="material_A200_lightgreen">#69F0AE</color>
-    <color name="material_A200_yellow">#FFFF00</color>
+    <!--First App-->
+    <color name="background_inputscreen">#7C4DFF</color>
+    <color name="background_resultscreen">#536DFE</color>
 
-    <!--Material 200-->
-    <color name="material_200_pink">#CE93D8</color>
+    <!--IMC Calculator: Components-->
+    <color name="background_component">#1D1E33</color>
+    <color name="background_component_selected">#FF111328</color>
+    <color name="background_app">#0E0B20</color>
+    <color name="background_button">#EB1555</color>
+    <color name="title_text">#FF8D8E98</color>
+    <color name="background_fab">#FF6200EE</color>
+
+    <!--IMC Calculator: Information-->
+    <color name="low_imc">#FFEE58</color>
+    <color name="normal_imc">#66BB6A</color>
+    <color name="overweight_imc">#FFA726</color>
+    <color name="obesity_imc">#EF5350</color>
+    <color name="error_imc">@color/obesity_imc</color>
+
 </resources>
+

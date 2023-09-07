@@ -8,16 +8,15 @@
     tools:context=".apps.menu.MenuActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/firstApp"
+        android:id="@+id/btnFirstApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/first_app_name" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/App2"
+        android:id="@+id/btnImcApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="false"
         android:text="@string/second_app_name" />
 
     <androidx.appcompat.widget.AppCompatButton

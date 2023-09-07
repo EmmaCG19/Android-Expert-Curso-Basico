@@ -1,13 +1,42 @@
 <resources>
     <string name="app_name">AndroidMaster</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_main">MainActivity</string>
+    <!-- Menu -->
+    <string name="first_app_name">SALUDAPP</string>
+    <string name="second_app_name">IMC APP</string>
+    <string name="third_app_name">APP #3</string>
+    <string name="fourth_app_name">APP #4</string>
+
+    <!-- IMCCalculator -->
+
+    <!--Components-->
+    <string name="male_symbol">Male symbol</string>
+    <string name="female_symbol">Female symbol</string>
+    <string name="male_description">Hombre</string>
+    <string name="female_description">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="plus_operator">+</string>
+    <string name="minus_operator">-</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Tu resultado</string>
+    <string name="recalculate">Re-calcular</string>
+
+    <!--IMC Information-->
+    <string name="error">Error</string>
+
+    <string name="low_status">Bajo</string>
+    <string name="low_description">Estás con un peso por debajo de lo normal para adultos de tu estatura.</string>
+
+    <string name="normal_status">Normal</string>
+    <string name="normal_description">Estás en lo óptimo para tu peso y altura.</string>
+
+    <string name="overweight_status">Sobrepeso</string>
+    <string name="overweight_description">Estás con sobrepeso para adultos de tu estatura.</string>
+
+    <string name="obesity_status">Obesidad</string>
+    <string name="obesity_description">Estás con obesidad para adultos de tu estatura.</string>
+
 </resources>
