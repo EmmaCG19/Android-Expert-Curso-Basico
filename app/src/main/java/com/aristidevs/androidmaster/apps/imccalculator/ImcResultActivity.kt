@@ -70,7 +70,7 @@ class ImcResultActivity : AppCompatActivity() {
 
             in 30.0..99.9 -> { //Obesidad
                 imcStatus = getString(R.string.obesity_status)
-                imcDescription = getString(R.string.obesity_status)
+                imcDescription = getString(R.string.obesity_description)
                 statusColor = R.color.obesity_imc
             }
 

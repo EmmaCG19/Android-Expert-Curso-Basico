@@ -28,15 +28,15 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var btnCalculate: AppCompatButton
 
     private var isMaleSelected: Boolean = true
-    private var isFemaleSelected: Boolean = true
+    private var isFemaleSelected: Boolean = false
     private var currentWeight: Int = 70
     private var currentAge: Int = 26
     private var currentHeight: Int = 120
 
-    companion object{
+    companion object {
         const val IMC_RESULT_KEY = "IMC_RESULT"
-
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_imc_calculator)
@@ -141,7 +141,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
     }
 
     private fun getBackgroundColor(isSelectedComponent: Boolean): Int {
-            val color = if (isSelectedComponent) {
+        val color = if (isSelectedComponent) {
             R.color.background_component_selected
         } else {
             R.color.background_component

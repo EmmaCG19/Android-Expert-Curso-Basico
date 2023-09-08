@@ -10,7 +10,7 @@
 
     <!--First App-->
     <color name="background_inputscreen">#7C4DFF</color>
-    <color name="background_resultscreen">#536DFE</color>
+    <color name="background_resultscreen">@color/purple_500</color>
 
     <!--IMC Calculator: Components-->
     <color name="background_component">#1D1E33</color>

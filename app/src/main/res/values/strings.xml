@@ -38,5 +38,6 @@
 
     <string name="obesity_status">Obesidad</string>
     <string name="obesity_description">Estás con obesidad para adultos de tu estatura.</string>
+    <string name="click_me">HAZ CLICK!</string>
 
 </resources>
