@@ -5,7 +5,7 @@
     <!-- Menu -->
     <string name="first_app_name">SALUDAPP</string>
     <string name="second_app_name">IMC APP</string>
-    <string name="third_app_name">APP #3</string>
+    <string name="third_app_name">TODO APP</string>
     <string name="fourth_app_name">APP #4</string>
 
     <!-- IMCCalculator -->
@@ -39,5 +39,15 @@
     <string name="obesity_status">Obesidad</string>
     <string name="obesity_description">Estás con obesidad para adultos de tu estatura.</string>
     <string name="click_me">HAZ CLICK!</string>
+
+    <!--TODOApp-->
+    <string name="todo_title">Bienvenido, Emma</string>
+    <string name="todo_category_subtitle">Categorías:</string>
+    <string name="todo_tasks_subtitle">Tareas:</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="todo_dialog_add_task_input">Añade la tarea</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
 
 </resources>

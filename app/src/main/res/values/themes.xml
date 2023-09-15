@@ -14,12 +14,34 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.AndroidMaster.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <!-- TODOApp -->
+    <style name="Theme.TODOApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/todo_background_todo_app</item>
+        <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.AndroidMaster.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="TodoSubtitle">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginHorizontal">32dp</item>
+        <item name="android:textColor">@color/todo_subtitle_text</item>
+    </style>
 
-    <style name="Theme.AndroidMaster.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
+
+    <!--Testing app style without this snippet!-->
+    <!--    <style name="Theme.AndroidMaster.NoActionBar">-->
+    <!--        <item name="windowActionBar">false</item>-->
+    <!--        <item name="windowNoTitle">true</item>-->
+    <!--    </style>-->
+    <!--    <style name="Theme.AndroidMaster.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+    <!--    <style name="Theme.AndroidMaster.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->

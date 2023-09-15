@@ -7,34 +7,56 @@ import androidx.appcompat.widget.AppCompatButton
 import com.aristidevs.androidmaster.R
 import com.aristidevs.androidmaster.apps.firstapp.FirstAppActivity
 import com.aristidevs.androidmaster.apps.imccalculator.ImcCalculatorActivity
+import com.aristidevs.androidmaster.apps.todoapp.TodoAppActivity
 
 class MenuActivity : AppCompatActivity() {
+    private lateinit var firstApp: AppCompatButton
+    private lateinit var btnImcApp: AppCompatButton
+    private lateinit var btnTODOApp: AppCompatButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-        setupUI()
+        initComponents()
+        initListeners()
     }
 
-    private fun setupUI() {
-        navigateToFirstApp()
-        navigateToImcApp()
+    private fun initComponents() {
+        btnTODOApp = findViewById(R.id.btnTODOApp)
+        btnImcApp = findViewById(R.id.btnImcApp)
+        firstApp = findViewById(R.id.btnFirstApp)
+    }
+
+    private fun initListeners() {
+        btnTODOApp.setOnClickListener {
+            navigateToTODOApp()
+
+        }
+
+        btnImcApp.setOnClickListener {
+            navigateToImcApp()
+        }
+
+        firstApp.setOnClickListener {
+            navigateToFirstApp()
+        }
+    }
+
+    private fun navigateToTODOApp() {
+        Intent(this, TodoAppActivity::class.java).apply {
+            startActivity(this)
+        }
     }
 
     private fun navigateToImcApp() {
-        val btnImcApp = findViewById<AppCompatButton>(R.id.btnImcApp)
-        btnImcApp.setOnClickListener {
-            Intent(this, ImcCalculatorActivity::class.java).apply {
-                startActivity(this)
-            }
+        Intent(this, ImcCalculatorActivity::class.java).apply {
+            startActivity(this)
         }
     }
 
     private fun navigateToFirstApp() {
-        val firstApp = findViewById<AppCompatButton>(R.id.btnFirstApp)
-        firstApp.setOnClickListener {
-            Intent(this, FirstAppActivity::class.java).apply {
-                startActivity(this)
-            }
+        Intent(this, FirstAppActivity::class.java).apply {
+            startActivity(this)
         }
     }
 }

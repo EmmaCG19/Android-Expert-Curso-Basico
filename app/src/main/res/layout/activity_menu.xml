@@ -11,19 +11,21 @@
         android:id="@+id/btnFirstApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="true"
         android:text="@string/first_app_name" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnImcApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="true"
         android:text="@string/second_app_name" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/App3"
+        android:id="@+id/btnTODOApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:enabled="false"
+        android:enabled="true"
         android:text="@string/third_app_name" />
 
     <androidx.appcompat.widget.AppCompatButton
