@@ -17,10 +17,7 @@ class TasksAdapter(
     }
 
     override fun onBindViewHolder(holder: TasksViewHolder, position: Int) {
-        holder.render(tasks[position])
-        holder.itemView.setOnClickListener {
-            onTaskSelected(position)
-        }
+        holder.render(tasks[position], onTaskSelected)
     }
 
     override fun getItemCount() = tasks.size

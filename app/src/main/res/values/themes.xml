@@ -37,11 +37,3 @@
     </style>
 
 </resources>
-
-    <!--Testing app style without this snippet!-->
-    <!--    <style name="Theme.AndroidMaster.NoActionBar">-->
-    <!--        <item name="windowActionBar">false</item>-->
-    <!--        <item name="windowNoTitle">true</item>-->
-    <!--    </style>-->
-    <!--    <style name="Theme.AndroidMaster.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
-    <!--    <style name="Theme.AndroidMaster.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->

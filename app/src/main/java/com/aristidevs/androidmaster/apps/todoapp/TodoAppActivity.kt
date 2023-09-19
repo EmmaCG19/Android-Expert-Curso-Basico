@@ -3,7 +3,7 @@ package com.aristidevs.androidmaster.apps.todoapp
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.View
 import android.widget.RadioButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aristidevs.androidmaster.R
@@ -42,6 +42,7 @@ class TodoAppActivity : AppCompatActivity() {
     private fun initUI() {
         initCategoriesRV()
         initTasksRV()
+        updateTasks()
     }
 
     private fun initListeners() {
@@ -51,21 +52,17 @@ class TodoAppActivity : AppCompatActivity() {
     }
 
     private fun showDialog() {
-
-        //Open Dialog
         val dialog = Dialog(this)
         dialogBinding = DialogTaskBinding.inflate(layoutInflater)
         dialog.setContentView(dialogBinding.root)
         dialog.show()
 
-        //Adding a new task
         dialogBinding.btnAddTask.setOnClickListener {
 
             val taskName = dialogBinding.etTask.text.toString()
 
             if (taskName.isNotEmpty()) {
 
-                //Obtain the selected category
                 val selectedId = dialogBinding.rgCategories.checkedRadioButtonId
                 val selectedRadioButton =
                     dialogBinding.rgCategories.findViewById<RadioButton>(selectedId)
@@ -75,16 +72,20 @@ class TodoAppActivity : AppCompatActivity() {
                     else -> Other
                 }
 
-                //Add new item to the list
                 tasks.add(Task(taskName, currentCategory))
-
-                //Notify TasksAdapter of the changes on the list
                 updateTasks()
-
-                //Hide dialog
                 dialog.hide()
             }
         }
+    }
+
+    private fun initTasksRV() {
+        tasksAdapter = TasksAdapter(tasks) { taskPosition ->
+            onItemSelected(taskPosition)
+        }
+
+        binding.rvTasks.layoutManager = LinearLayoutManager(this)
+        binding.rvTasks.adapter = tasksAdapter
     }
 
     private fun onItemSelected(position: Int) {
@@ -96,15 +97,17 @@ class TodoAppActivity : AppCompatActivity() {
         val newTasks: List<Task> = tasks.filter { it.category.isSelected }
         tasksAdapter.tasks = newTasks
         tasksAdapter.notifyDataSetChanged()
+        setTasksVisibility(newTasks)
     }
 
-    private fun initTasksRV() {
-        tasksAdapter = TasksAdapter(tasks) { taskPosition ->
-            onItemSelected(taskPosition)
+    private fun setTasksVisibility(tasks: List<Task>) {
+        if (tasks.isEmpty()) {
+            binding.tvNoTasks.visibility = View.VISIBLE
+            binding.rvTasks.visibility = View.GONE
+        } else {
+            binding.tvNoTasks.visibility = View.GONE
+            binding.rvTasks.visibility = View.VISIBLE
         }
-
-        binding.rvTasks.layoutManager = LinearLayoutManager(this)
-        binding.rvTasks.adapter = tasksAdapter
     }
 
     private fun initCategoriesRV() {

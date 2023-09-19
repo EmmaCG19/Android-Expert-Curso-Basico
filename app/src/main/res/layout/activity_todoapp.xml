@@ -47,7 +47,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvNoTasks"
+            style="@style/TodoSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="42sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:text="@string/todo_no_tasks_found" />
+
 
     </LinearLayout>
 
@@ -61,5 +74,6 @@
         app:backgroundTint="@color/todo_accent"
         app:fabSize="normal"
         app:tint="@color/white" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

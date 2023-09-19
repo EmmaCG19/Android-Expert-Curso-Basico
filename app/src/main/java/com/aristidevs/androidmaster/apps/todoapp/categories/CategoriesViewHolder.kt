@@ -11,7 +11,7 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun render(taskCategory: TaskCategory, onCategorySelected: (Int) -> Unit) {
 
-        //Change background when category is clicked
+        //Change card background when category is clicked
         val color = if (taskCategory.isSelected) {
             R.color.todo_background_card
         } else {
@@ -55,12 +55,9 @@ class CategoriesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         binding.tvCategoryName.text = categoryName
         binding.categoryDivider.setBackgroundColor(
             ContextCompat.getColor(
-                binding.root.context,
+                binding.tvCategoryName.context,
                 colorId
             )
         )
     }
 }
-
-
-//TODO: Replace hardcoded strings with references from strings.xml

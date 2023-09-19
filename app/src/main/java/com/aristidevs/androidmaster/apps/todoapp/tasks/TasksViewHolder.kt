@@ -1,7 +1,6 @@
 package com.aristidevs.androidmaster.apps.todoapp.tasks
 
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.graphics.Paint
 import android.view.View
 import androidx.core.content.ContextCompat
@@ -13,7 +12,7 @@ import com.aristidevs.androidmaster.databinding.ItemTodoTaskBinding
 class TasksViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val binding = ItemTodoTaskBinding.bind(itemView)
 
-    fun render(task: Task) {
+    fun render(task: Task, onTaskSelected: (Int) -> Unit) {
         //TextView
         binding.tvTaskName.text = task.name
 
@@ -28,6 +27,16 @@ class TasksViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         //Checkbox
         binding.cbTask.isChecked = task.isSelected
         binding.cbTask.buttonTintList = ColorStateList.valueOf(getCategoryColor(task))
+
+        //Define click actions
+        binding.root.setOnClickListener {
+            onTaskSelected(layoutPosition)
+        }
+
+        binding.cbTask.setOnClickListener {
+            onTaskSelected(layoutPosition)
+        }
+
     }
 
     private fun getCategoryColor(task: Task): Int {

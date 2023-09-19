@@ -49,5 +49,6 @@
     <string name="todo_dialog_category_other">Otros</string>
     <string name="todo_dialog_add_task_input">Añade la tarea</string>
     <string name="todo_dialog_add_task_button">Crear tarea</string>
+    <string name="todo_no_tasks_found">No tasks</string>
 
 </resources>
