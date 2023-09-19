@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/todo_background_todo_app"
-        android:orientation="vertical"
-        tools:context=".apps.todoapp.TodoAppActivity">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,20 +46,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            tools:visibility="gone" />
 
-        <TextView
-            android:id="@+id/tvNoTasks"
-            style="@style/TodoSubtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/ivTasksEmpty"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:textSize="42sp"
-            android:visibility="gone"
-            android:textStyle="bold"
-            android:text="@string/todo_no_tasks_found" />
-
+            android:layout_marginVertical="50dp"
+            android:contentDescription="@string/todo_tasks_empty"
+            android:src="@drawable/ic_tasks_done"
+            app:tint="@color/white" />
 
     </LinearLayout>
 

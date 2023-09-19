@@ -102,10 +102,10 @@ class TodoAppActivity : AppCompatActivity() {
 
     private fun setTasksVisibility(tasks: List<Task>) {
         if (tasks.isEmpty()) {
-            binding.tvNoTasks.visibility = View.VISIBLE
+            binding.ivTasksEmpty.visibility = View.VISIBLE
             binding.rvTasks.visibility = View.GONE
         } else {
-            binding.tvNoTasks.visibility = View.GONE
+            binding.ivTasksEmpty.visibility = View.GONE
             binding.rvTasks.visibility = View.VISIBLE
         }
     }
